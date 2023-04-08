@@ -1,0 +1,121 @@
+@import "../../scss_config/conf.scss";
+footer {
+    .footer-top {
+        background-color: var(--secondary-color);
+        padding: 35px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #fff;
+            @include md {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                svg {
+                    font-size: 20px;
+                }
+            }
+            .right {
+                display: flex;
+                background-color: #fff;
+                padding: 3px;
+                overflow: hidden;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                input {
+                    border: none;
+                    outline: none;
+                    padding: 0 15px;
+                    width: 100%;
+                }
+                button {
+                    font-size: 12px;
+                    cursor: pointer;
+                    background-color: var(--secondary-color);
+                    padding: 5px 10px;
+                    border: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 400;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .footer-center {
+        background-color: var(--secondary-color);
+        padding: var(--padding-Y) 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            color: #fff;
+            gap: 20px;
+            .item {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+                address,
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                a {
+                    color: #fff;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .social-icons {
+                    display: flex;
+                    gap: 10px;
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        display: grid;
+                        place-items: center;
+                        background-color: var(--primary-color);
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

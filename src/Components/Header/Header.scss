@@ -1,0 +1,150 @@
+@import "../../scss_config/conf.scss";
+header {
+    .header-top {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 10px;
+        font-size: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include md {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .left {
+                .phone {
+                    color: #fff;
+                    padding-right: 20px;
+                    border-right: 1px solid #eee;
+                }
+                .lang,
+                .currency {
+                    padding: 10px;
+                    cursor: pointer;
+                    svg {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-center {
+        background-color: var(--primary-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            @include md {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .left {
+                .logo a {
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+            .center {
+                flex: 1;
+                background-color: #fff;
+                display: flex;
+                overflow: hidden;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                input {
+                    width: 100%;
+                    border: none;
+                    padding: 10px 20px;
+                    outline: none;
+                }
+                button {
+                    padding: 10px 15px;
+                    border: none;
+                    background-color: var(--golden-color);
+                    cursor: pointer;
+                }
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                @include md {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                .box {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #fff;
+                    svg {
+                        font-size: 30px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                    .count {
+                        padding: 3px 10px;
+                        background-color: #fff;
+                        color: #000;
+                        font-size: 12px;
+                        border-radius: 50px;
+                        -webkit-border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        -ms-border-radius: 50px;
+                        -o-border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            @include md {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .drop-down {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                svg {
+                    font-size: 20px;
+                }
+                span {
+                    margin: 0 5px;
+                    text-transform: uppercase;
+                }
+            }
+            .menu {
+                border-left: 1px solid rgba(255, 255, 255, 0.3);
+                @include md {
+                    border-left: none;
+                }
+                a {
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    color: #fff;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
