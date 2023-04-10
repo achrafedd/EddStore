@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 
 import payments from "../../assets/images/icons_payment 1.png";
+import MobileStores from "../../assets/images/mobile-store.png";
 
 import "./Footer.scss";
 
@@ -91,7 +92,7 @@ const Footer = () => {
                             Download our app and get extra 15% Discount on Your
                             first order.
                         </p>
-                        <img src="" alt="" />
+                        <img src={MobileStores} alt="mobile stores" />
                     </div>
                 </div>
             </div>

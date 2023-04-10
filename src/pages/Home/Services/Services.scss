@@ -1,0 +1,22 @@
+.services {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        place-items: center;
+        .service {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .title {
+                font-size: 14px;
+            }
+            .desc {
+                font-size: 12px;
+                color: var(--text-muted);
+            }
+        }
+    }
+}
