@@ -32,13 +32,17 @@
                 svg {
                     cursor: pointer;
                     font-size: 20px;
+                    &.muted {
+                        color: var(--text-muted);
+                    }
                 }
             }
         }
         .products_cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            display: flex;
+            overflow: hidden;
             gap: 20px;
+            scroll-behavior: smooth;
         }
     }
 }

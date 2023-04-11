@@ -64,11 +64,11 @@ const Footer = () => {
                     </div>
                     <div className="item">
                         <h2 className="title">Information</h2>
-                        <Link to="/">Privacy Policy</Link>
-                        <Link to="/">Refund Policy</Link>
-                        <Link to="/">Shipping Policy</Link>
-                        <Link to="/">Terms of Service</Link>
-                        <Link to="/">Blogs</Link>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/refund-policy">Refund Policy</Link>
+                        <Link to="/shipping-policy">Shipping Policy</Link>
+                        <Link to="/terms-of-service">Terms of Service</Link>
+                        <Link to="/blogs">Blogs</Link>
                     </div>
                     <div className="item">
                         <h2 className="title">Account</h2>

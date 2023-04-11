@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // Components
 import ProductCard from "../../../Components/ProductCard/ProductCard";
 // Icons
@@ -6,7 +6,20 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // Styles
 import "./Products.scss";
 
-const Products = ({ title, productsItems }) => {
+const Products = ({ title, productsItems, class_name }) => {
+    let products_cards;
+
+    useEffect(() => {
+        products_cards = document.querySelector(`.${class_name}`);
+    }, []);
+
+    const preve = () => {
+        products_cards.scrollLeft = products_cards.scrollLeft - 236;
+    };
+
+    const next = () => {
+        products_cards.scrollLeft = products_cards.scrollLeft + 236;
+    };
     return (
         <section className="products">
             <div className="container">
@@ -15,11 +28,11 @@ const Products = ({ title, productsItems }) => {
                         <h2 className="title">{title}</h2>
                     </div>
                     <div className="right">
-                        <IoIosArrowBack />
-                        <IoIosArrowForward />
+                        <IoIosArrowBack className="preve" onClick={preve} />
+                        <IoIosArrowForward className="next" onClick={next} />
                     </div>
                 </div>
-                <div className="products_cards">
+                <div className={`products_cards ${class_name}`}>
                     {productsItems.map(
                         ({ id, title, price, image, brand, rate }, i) => (
                             <ProductCard

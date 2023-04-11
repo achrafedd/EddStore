@@ -21,11 +21,13 @@ const Home = () => {
             <Products
                 title="Featured Collection"
                 productsItems={productsItems}
+                class_name={"card_one"}
             />
             <Famous />
             <Products
                 title="Our Popular Products"
                 productsItems={productsItems}
+                class_name={"card_tow"}
             />
             <Brands />
             <Blogs title="Our Latest News" blogs={blogs} />

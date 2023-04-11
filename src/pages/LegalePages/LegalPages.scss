@@ -1,0 +1,11 @@
+.legal_pages {
+    padding: var(--padding-Y) 0;
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
