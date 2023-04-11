@@ -1,12 +1,15 @@
 import React from "react";
-
+// Components
 import Banner from "./Banner/Banner";
 import Services from "./Services/Services";
 import Categories from "./Categories/Categories";
-import Products from "../../Components/Products/Products";
-
-import { productsItems } from "../../utils/Data";
-
+import Products from "./Products/Products";
+import Famous from "./Famous/Famous";
+import Brands from "./Brands/Brands";
+import Blogs from "./Blogs/Blogs";
+// Data
+import { productsItems, blogs } from "../../utils/Data";
+// Style
 import "./Home.scss";
 
 const Home = () => {
@@ -19,6 +22,13 @@ const Home = () => {
                 title="Featured Collection"
                 productsItems={productsItems}
             />
+            <Famous />
+            <Products
+                title="Our Popular Products"
+                productsItems={productsItems}
+            />
+            <Brands />
+            <Blogs title="Our Latest News" blogs={blogs} />
         </div>
     );
 };

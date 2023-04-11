@@ -6,7 +6,7 @@ import { services } from "../../../utils/Data";
 
 const Services = () => {
     return (
-        <div className="services">
+        <section className="services">
             <div className="container">
                 {services.map(({ image, title, desc }, i) => (
                     <div key={i} className="service">
@@ -20,7 +20,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -1,18 +1,29 @@
 import React from "react";
-
-import ProductCard from "./ProductCard/ProductCard";
-
+// Components
+import ProductCard from "../../../Components/ProductCard/ProductCard";
+// Icons
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+// Styles
 import "./Products.scss";
 
 const Products = ({ title, productsItems }) => {
     return (
-        <div className="products">
+        <section className="products">
             <div className="container">
-                <h3 className="title">{title}</h3>
+                <div className="top">
+                    <div className="left">
+                        <h2 className="title">{title}</h2>
+                    </div>
+                    <div className="right">
+                        <IoIosArrowBack />
+                        <IoIosArrowForward />
+                    </div>
+                </div>
                 <div className="products_cards">
                     {productsItems.map(
-                        ({ title, price, image, brand, rate }, i) => (
+                        ({ id, title, price, image, brand, rate }, i) => (
                             <ProductCard
+                                id={id}
                                 title={title}
                                 price={price}
                                 image={image}
@@ -24,7 +35,7 @@ const Products = ({ title, productsItems }) => {
                     )}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

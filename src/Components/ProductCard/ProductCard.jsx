@@ -3,19 +3,24 @@ import React from "react";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
 import "./ProductCard.scss";
+import { Link } from "react-router-dom";
 
-const ProductCard = ({ title, price, image, brand, rate }) => {
+const ProductCard = ({ id, title, price, image, brand, rate }) => {
     return (
         <div className="product_card">
             <div className="wishlist">
                 <AiOutlineHeart />
             </div>
             <div className="image">
-                <img src={image} alt={title} />
+                <Link to={`product/${id}`}>
+                    <img src={image} alt={title} />
+                </Link>
             </div>
             <div className="product_detailes">
                 <span className="brand">{brand}</span>
-                <h3 className="product_title">{title}</h3>
+                <Link to={`product/${id}`}>
+                    <h3 className="product_title">{title}</h3>
+                </Link>
                 <div className="rate">
                     <AiFillStar />
                     <AiFillStar />

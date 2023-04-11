@@ -1,4 +1,7 @@
 .product_card {
+    box-shadow: 5px 4px 20px -5px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 5px 4px 20px -5px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 5px 4px 20px -5px rgba(0, 0, 0, 0.53);
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -22,13 +25,17 @@
             margin-bottom: 5px;
             font-size: 12px;
         }
-        .product_title {
-            font-size: 15px;
-            font-weight: normal;
-            margin-bottom: 10px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+        a {
+            display: block;
+            .product_title {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 10px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                color: var(--primary-color);
+            }
         }
         .rate {
             display: flex;

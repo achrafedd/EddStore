@@ -6,7 +6,7 @@ import "./Categories.scss";
 
 const Categories = () => {
     return (
-        <div className="categories">
+        <section className="categories">
             <div className="container">
                 {categories.map(({ title, image, items }, i) => (
                     <div className="category" key={i}>
@@ -20,7 +20,7 @@ const Categories = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
