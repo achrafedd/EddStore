@@ -58,31 +58,31 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="right">
-                        <div className="box">
+                        <Link to="/compare-products" className="box">
                             <BsArrowRepeat />
                             <span className="text">
                                 Compare <br /> Products
                             </span>
-                        </div>
-                        <div className="box">
+                        </Link>
+                        <Link to="/wishlist" className="box">
                             <AiOutlineHeart />
                             <span className="text">
                                 Favourite <br /> Wishlist
                             </span>
-                        </div>
-                        <div className="box">
+                        </Link>
+                        <Link to="/login" className="box">
                             <AiOutlineUser />
                             <span className="text">
                                 LogiIn <br /> My Account
                             </span>
-                        </div>
-                        <div className="box">
+                        </Link>
+                        <Link to="/cart" className="box">
                             <AiOutlineShoppingCart />
                             <span className="text">
                                 <span className="count">0</span> <br />
                                 <span className="total">$100</span>
                             </span>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

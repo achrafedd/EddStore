@@ -1,0 +1,11 @@
+.blogs-page {
+    padding: var(--padding-Y);
+    background-color: var(--bg-color);
+    .container {
+        .blogs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    }
+}

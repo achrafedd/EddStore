@@ -43,6 +43,9 @@
             overflow: hidden;
             gap: 20px;
             scroll-behavior: smooth;
+            & > .product_card {
+                min-width: 216px;
+            }
         }
     }
 }

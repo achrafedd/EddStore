@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 // Styles
 import "./Blogcard.scss";
 
-const BlogCard = ({ id, image, title, date, content }) => {
+const BlogCard = ({ blog }) => {
+    const { id, image, title, date, content } = blog;
     return (
         <div className="blog_card">
             <div className="image">
@@ -14,7 +15,7 @@ const BlogCard = ({ id, image, title, date, content }) => {
                 <span className="date">{new Date(date).toDateString()}</span>
                 <h3 className="blog_title">{title}</h3>
                 <p className="text">{content.slice(0, 50)}...</p>
-                <Link className="btn" to={`blog/${id}`}>
+                <Link className="btn" to={`/blog/${id}`}>
                     Read More
                 </Link>
             </div>

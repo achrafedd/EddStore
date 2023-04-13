@@ -35,15 +35,8 @@ const Blogs = ({ title, blogs }) => {
                     </div>
                 </div>
                 <div className="blog_cards">
-                    {blogs.map(({ id, image, title, date, content }) => (
-                        <BlogCard
-                            key={id}
-                            id={id}
-                            image={image}
-                            title={title}
-                            date={date}
-                            content={content}
-                        />
+                    {blogs.map((blog, i) => (
+                        <BlogCard key={i} blog={blog} />
                     ))}
                 </div>
             </div>

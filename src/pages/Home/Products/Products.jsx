@@ -33,19 +33,9 @@ const Products = ({ title, productsItems, class_name }) => {
                     </div>
                 </div>
                 <div className={`products_cards ${class_name}`}>
-                    {productsItems.map(
-                        ({ id, title, price, image, brand, rate }, i) => (
-                            <ProductCard
-                                id={id}
-                                title={title}
-                                price={price}
-                                image={image}
-                                brand={brand}
-                                rate={rate}
-                                key={i}
-                            />
-                        )
-                    )}
+                    {productsItems.map((product, i) => (
+                        <ProductCard product={product} key={i} />
+                    ))}
                 </div>
             </div>
         </section>

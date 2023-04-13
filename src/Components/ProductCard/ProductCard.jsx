@@ -5,20 +5,21 @@ import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import "./ProductCard.scss";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ id, title, price, image, brand, rate }) => {
+const ProductCard = ({ product }) => {
+    const { id, title, price, image, brand, rate } = product;
     return (
         <div className="product_card">
             <div className="wishlist">
                 <AiOutlineHeart />
             </div>
             <div className="image">
-                <Link to={`product/${id}`}>
+                <Link to={`/product/${id}`}>
                     <img src={image} alt={title} />
                 </Link>
             </div>
             <div className="product_detailes">
                 <span className="brand">{brand}</span>
-                <Link to={`product/${id}`}>
+                <Link to={`/product/${id}`}>
                     <h3 className="product_title">{title}</h3>
                 </Link>
                 <div className="rate">
