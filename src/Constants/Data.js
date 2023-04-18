@@ -1,54 +1,53 @@
+import Images from "./Images";
 // Services
-import Shipping from "../assets/images/service.png";
-import Gift from "../assets/images/service-02.png";
-import Support from "../assets/images/service-03.png";
-import Discount from "../assets/images/service-04.png";
-import Payment from "../assets/images/service-05.png";
 
-export const services = [
+const { Service01, Service02, Service03, Service04, Service05 } = Images;
+
+const services = [
     {
-        image: Shipping,
+        image: Service01,
         title: "Free Shipping",
         desc: "From all orders over $100",
     },
     {
-        image: Gift,
+        image: Service02,
         title: "Daily surprise offers",
         desc: "Save up to 25% off",
     },
     {
-        image: Support,
+        image: Service03,
         title: "Support 24/7",
         desc: "Shop with an expert",
     },
     {
-        image: Discount,
+        image: Service04,
         title: "Affordable prices",
         desc: "Get factory direct price",
     },
     {
-        image: Payment,
+        image: Service05,
         title: "Secure payments",
         desc: "100% protected payment",
     },
 ];
 
 // Categories
+const {
+    Laptop,
+    Camera,
+    Tv,
+    Watch,
+    Headphone,
+    Accessories,
+    HomeAppliances,
+    Speakers,
+} = Images;
 
-import Laptop from "../assets/images/laptop.jpg";
-import Camera from "../assets/images/camera.jpg";
-import Tv from "../assets/images/tv.jpg";
-import SmartWatch from "../assets/images/watch.jpg";
-import Headphone from "../assets/images/headphone.jpg";
-import Accessories from "../assets/images/acc.jpg";
-import HomeAppliances from "../assets/images/homeapp.jpg";
-import Speakers from "../assets/images/speaker.jpg";
-
-export const categories = [
+const categories = [
     { title: "Laptop", image: Laptop, items: 10 },
     { title: "Camera", image: Camera, items: 5 },
     { title: "TV", image: Tv, items: 15 },
-    { title: "Smart Watchs", image: SmartWatch, items: 20 },
+    { title: "Smart Watchs", image: Watch, items: 20 },
     { title: "HeadPhone", image: Headphone, items: 8 },
     { title: "Accessories", image: Accessories, items: 30 },
     { title: "Home Appliances", image: HomeAppliances, items: 10 },
@@ -57,7 +56,7 @@ export const categories = [
 
 // Products
 
-export const productsItems = [
+const productsItems = [
     {
         id: 1,
         image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
@@ -67,6 +66,29 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: [
+            {
+                id: 1,
+                stars: 5,
+                user: "admin",
+                date: "02/10/2022",
+                content: "good item",
+            },
+            {
+                id: 2,
+                stars: 5,
+                user: "jon",
+                date: "05/1/2023",
+                content: "Great service",
+            },
+        ],
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
+        tags: ["Phone", "Iphone", "Appel"],
     },
     {
         id: 2,
@@ -77,6 +99,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 3,
@@ -87,6 +116,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 4,
@@ -97,6 +133,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 5,
@@ -107,6 +150,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 6,
@@ -117,6 +167,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 7,
@@ -127,6 +184,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 8,
@@ -137,6 +201,13 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
     {
         id: 9,
@@ -147,21 +218,29 @@ export const productsItems = [
         category: "phone",
         brand: "Apple",
         rate: 4.8,
+        reviews: 10,
+        sku: "SKU001",
+        availability: true,
+        varient: {
+            name: "Color",
+            values: ["Red", "Blue", "Yellow", "Green"],
+        },
     },
 ];
 
 // Brands
+const {
+    Brand01,
+    Brand02,
+    Brand03,
+    Brand04,
+    Brand05,
+    Brand06,
+    Brand07,
+    Brand08,
+} = Images;
 
-import Brand01 from "../assets/images/brand-01.png";
-import Brand02 from "../assets/images/brand-02.png";
-import Brand03 from "../assets/images/brand-03.png";
-import Brand04 from "../assets/images/brand-04.png";
-import Brand05 from "../assets/images/brand-05.png";
-import Brand06 from "../assets/images/brand-06.png";
-import Brand07 from "../assets/images/brand-07.png";
-import Brand08 from "../assets/images/brand-08.png";
-
-export const brands = [
+const brands = [
     { id: 1, image: Brand01, name: "Apple" },
     { id: 2, image: Brand02, name: "Bose" },
     { id: 3, image: Brand03, name: "Canon" },
@@ -174,7 +253,7 @@ export const brands = [
 
 // Blogs
 
-export const blogs = [
+const blogs = [
     {
         id: 1,
         image: "https://www.technewsworld.com/wp-content/uploads/sites/3/2022/02/cybersecurity-lock.jpg",
@@ -218,7 +297,7 @@ export const blogs = [
 ];
 
 // Ligal Pages
-export const legal_pages = [
+const legal_pages = [
     {
         title: "Privacy Policy",
         slug: "/privacy-policy",
@@ -573,3 +652,12 @@ Last updated: <i>[10,9,2021]</i>
         `,
     },
 ];
+
+export default {
+    services,
+    categories,
+    productsItems,
+    brands,
+    blogs,
+    legal_pages,
+};

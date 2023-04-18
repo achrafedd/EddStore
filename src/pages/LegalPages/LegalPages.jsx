@@ -2,7 +2,7 @@ import React from "react";
 // Styles
 import "./LegalPages.scss";
 
-const LigalPages = ({ title, content }) => {
+const LegalPages = ({ title, content }) => {
     const createMarkup = () => {
         return { __html: content };
     };
@@ -16,4 +16,4 @@ const LigalPages = ({ title, content }) => {
     );
 };
 
-export default LigalPages;
+export default LegalPages;

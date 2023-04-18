@@ -1,20 +1,24 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Components
-import Layout from "./Components/Layout/Layout";
-import ScrollToTop from "./Components/ScrollToTop";
+import { Layout, ScrollToTop } from "./Components";
 // Pages
-import Home from "./pages/Home/Home";
-import OurStore from "./pages/OurStore/OurStore";
-import LegalPages from "./pages/LegalePages/LegalPages";
-import Login from "./pages/Login/Login";
-import Register from "./pages/Register/Register";
+import {
+    Home,
+    Cart,
+    Login,
+    Register,
+    LegalPages,
+    OurStore,
+    SingleProduct,
+    BlogsPage,
+} from "./pages";
 // Data
-import { legal_pages } from "./utils/Data";
+import { Data } from "./Constants";
 // Styles
 import "./App.scss";
-import BlogsPage from "./pages/BlogsPage/BlogsPage";
 
 const App = () => {
+    const { productsItems, legal_pages } = Data;
     return (
         <div className="app">
             <BrowserRouter>
@@ -24,6 +28,13 @@ const App = () => {
                         <Route index element={<Home />} />
                         <Route exact path="/our-store" element={<OurStore />} />
                         <Route exact path="/blogs" element={<BlogsPage />} />
+                        <Route exact path="/cart" element={<Cart />} />
+                        <Route
+                            path="/product/:id"
+                            element={
+                                <SingleProduct product={productsItems[0]} />
+                            }
+                        />
                         <Route exact path="/login" element={<Login />} />
                         <Route exact path="/register" element={<Register />} />
                         {legal_pages.map(({ title, slug, content }, i) => (

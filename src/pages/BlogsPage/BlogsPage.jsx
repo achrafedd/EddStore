@@ -2,11 +2,12 @@ import React from "react";
 // Components
 import BlogCard from "../../Components/BlogCard/BlogCard";
 // Data
-import { blogs } from "../../utils/Data";
+import { Data } from "../../Constants";
 // Styles
 import "./BlogsPage.scss";
 
 const BlogsPage = () => {
+    const { blogs } = Data;
     return (
         <div className="blogs-page">
             <div className="container">

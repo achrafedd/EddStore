@@ -8,11 +8,12 @@ import Famous from "./Famous/Famous";
 import Brands from "./Brands/Brands";
 import Blogs from "./Blogs/Blogs";
 // Data
-import { productsItems, blogs } from "../../utils/Data";
+import { Data } from "../../Constants";
 // Style
 import "./Home.scss";
 
 const Home = () => {
+    const { productsItems, blogs } = Data;
     return (
         <div className="home">
             <Banner />

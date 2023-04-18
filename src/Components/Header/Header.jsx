@@ -73,7 +73,7 @@ const Header = () => {
                         <Link to="/login" className="box">
                             <AiOutlineUser />
                             <span className="text">
-                                LogiIn <br /> My Account
+                                Log In <br /> My Account
                             </span>
                         </Link>
                         <Link to="/cart" className="box">

@@ -2,9 +2,10 @@ import React from "react";
 
 import "./Services.scss";
 
-import { services } from "../../../utils/Data";
+import { Data } from "../../../Constants";
 
 const Services = () => {
+    const { services } = Data;
     return (
         <section className="services">
             <div className="container">

@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 // Components
 import ProductCard from "../../Components/ProductCard/ProductCard";
 // Data
-import { productsItems, categories } from "../../utils/Data";
+import { Data } from "../../Constants";
 // Styles
 import "./OurStore.scss";
 
 const OurStore = () => {
+    const { categories, productsItems } = Data;
     return (
         <div className="our-store">
             <div className="container">

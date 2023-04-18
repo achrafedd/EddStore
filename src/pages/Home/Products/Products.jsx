@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 // Components
-import ProductCard from "../../../Components/ProductCard/ProductCard";
+import { ProductCard } from "../../../Components";
 // Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // Styles

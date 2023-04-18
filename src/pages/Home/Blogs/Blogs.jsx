@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 // Components
-import BlogCard from "../../../Components/BlogCard/BlogCard";
+import { BlogCard } from "../../../Components";
 // Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
 // Styles
 import "./Blogs.scss";
 

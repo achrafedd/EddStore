@@ -1,10 +1,11 @@
 import React from "react";
-
-import { categories } from "../../../utils/Data";
-
+// Data
+import { Data } from "../../../Constants";
+// Styles
 import "./Categories.scss";
 
 const Categories = () => {
+    const { categories } = Data;
     return (
         <section className="categories">
             <div className="container">
